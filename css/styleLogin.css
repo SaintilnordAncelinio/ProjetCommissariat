@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Arial', 'Sans-serif';
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/back3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.container {
+    background-color: #fff;
+    font-size: 12px;
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid #045de9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2; 
+}
+.bwat1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 70px;
+    background-color: #045de9;
+    overflow: hidden;
+}
+
+.form-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.form-container.active {
+    display: block;
+}
+
+h2 {
+    margin-top: 0;
+}
+.kont{
+    padding: 20px;
+    width: 100%;
+    color: #ccc;
+    font-size: 10px;
+    text-align: right;
+}
+.form-group {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.form-group input {
+    color: black;
+    width: 100%;
+    font-weight: 600;
+    padding: 10px 10px 10px 40px;
+    border-style: none;
+    background-color: #e8f0fe;
+    margin-bottom: 10px;
+}
+
+.form-group input:focus{
+    border: 1px solid #045de9;
+    outline: none;
+   
+}
+
+.form-group i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: black;
+}
+
+.btn {
+    background-color: #045de9;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.toggle {
+    margin-top: 15px;
+    text-align: center;
+    
+}
+.toggle p{
+    margin-bottom: 10px;
+}
+
+.toggle a{
+    text-decoration: none;
+    color: #045de9;
+    text-transform: uppercase;
+}
+
+.toggle a:hover{
+    text-decoration: underline;
+}

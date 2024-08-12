@@ -1,0 +1,146 @@
+
+
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #045de9;
+    padding: 0 20px;
+    height: 60px;
+    box-shadow: 1px 1px 4px 1px gray;
+    border-bottom: 1px solid white;
+}
+
+.logo{
+    display: flex;
+    background:linear-gradient(180deg, white, #007bff 80%);
+
+}
+
+.logo img {
+    height: 60px;
+    border-bottom: 1px solid white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover, .dropdown:hover > a {
+    background-color: #0056b3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #045de9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+}
+
+.dropdown-content li {
+    margin-bottom: 5px;
+}
+
+.dropdown-content li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #0056b3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    height: 60px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.profile .username {
+    color: white;
+    margin-right: 15px;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #045de9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.profile:hover .profile-menu {
+    display: block;
+}
+
+.profile-menu li {
+    margin-bottom: 5px;
+}
+
+.profile-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.profile-menu li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-menu li a:hover {
+    background-color: #0056b3;
+}
+
+nav ul li.active > a {
+    background-color: #0056b3;
+    font-weight: bold; 
+}
+
+.profile-menu li a i {
+    margin-right: 2px; 
+}
